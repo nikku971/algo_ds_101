@@ -5,12 +5,12 @@
 using namespace std;
 
 int main(){
-     int N,m;//m->number of edges and n-> number of vertices
-     cin >> N >> m;
+     int N,m1;//m->number of edges and n-> number of vertices
+     cin >> N >> m1;
      vector<pair<int,int> > adj[N]; 
 
      int a,b,wt;
-     for(int i = 0; i<m ; i++){
+     for(int i = 0; i<m1 ; i++){
           cin >> a >> b >> wt;
           adj[a].push_back(make_pair(b,wt));
           adj[b].push_back(make_pair(a,wt));
